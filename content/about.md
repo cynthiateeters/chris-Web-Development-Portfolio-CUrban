@@ -4,6 +4,7 @@ const eleventyNavigation = {
 	order: 3
 };
 ---
+
 # About
 
-I am a person that writes stuff.
+Hi! I'm Chris Urban. I am a Game Developer who is currently majoring in a web development degree.

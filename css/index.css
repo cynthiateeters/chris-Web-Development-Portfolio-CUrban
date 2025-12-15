@@ -6,33 +6,22 @@
 
 /* Theme colors */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	--color-gray-20: hsl(40, 20%, 90%);
+	--color-gray-50: hsl(40, 20%, 70%);
+	--color-gray-90: hsl(40, 20%, 10%);
 
-	--background-color: #fff;
+	--background-color: hsl(37, 100%, 86%);
+	--color-message-box: hsl(36, 70%, 52%);
+	--nav-bar-background: hsl(37, 100%, 21%);
+
+	--section-background: var(--color-gray-20);
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: hsl(24, 49%, 18%);
+	--text-color-link-active: hsl(24, 100%, 36%);
+	--text-color-link-visited: hsl(24, 100%, 8%);
 
 	--syntax-tab-size: 2;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-
-		--background-color: #15202b;
-	}
 }
 
 
@@ -124,6 +113,11 @@ main :first-child {
 
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
+	background-color: var(--nav-bar-background);
+}
+
+header a[href], header a[href]:visited {
+	color: var(--color-gray-20);
 }
 
 #skip-link {
