@@ -1,6 +1,23 @@
 /* Defaults */
+
+/* Font families */
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-title: 'Playfair', -apple-system, sans-serif;
+	--font-family: 'Lora', -apple-system, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -118,6 +135,10 @@ header {
 
 header a[href], header a[href]:visited {
 	color: var(--color-gray-20);
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
 }
 
 #skip-link {

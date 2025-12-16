@@ -125,7 +125,10 @@ export default async function(eleventyConfig) {
 	// to emulate the file copy on the dev server. Learn more:
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
-	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	eleventyConfig.addPassthroughCopy("./fonts/Lora-Italic-VariableFont_wght.woff2");
+	eleventyConfig.addPassthroughCopy("./fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2");
 };
 
 export const config = {
